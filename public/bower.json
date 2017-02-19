@@ -1,7 +1,7 @@
 {
   "name": "public",
   "authors": [
-    "Adrian Smith <adrian@appName.io>"
+    "Adrian Smith <adrian@smithdev.io>"
   ],
   "description": "Bower file to track dependencies",
   "main": "bower.json",
