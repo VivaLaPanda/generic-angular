@@ -18,7 +18,7 @@
   "dependencies": {
     "angular-material": "^1.1.1",
     "angular-route": "^1.6.0",
-    "bootstrap": "v4.0.0-alpha.5",
+    "bootstrap": "v4.0.0-alpha.6",
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.2",
     "moment": "^2.17.1",
@@ -33,5 +33,8 @@
         "scss/bootstrap.scss"
       ]
     }
+  },
+  "resolutions": {
+    "bootstrap": "v4.0.0-alpha.6"
   }
 }
