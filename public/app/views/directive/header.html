@@ -1,0 +1,83 @@
+<md-sidenav
+	class="md-sidenav-left"
+	md-component-id="left"
+	md-whiteframe="4"
+>
+
+	<md-toolbar class="md-tall md-accent">
+		<span flex></span>
+		<h2 class="md-toolbar-tools">appName.io</h1>
+	</md-toolbar>
+	
+	<div md-whiteframe="3">
+		<md-list flex>
+			<md-list-item class="md-2-line" ng-repeat="element in ui.navLeftElements" ng-click="$location.path('/' + element.name)" >
+				<md-icon class="material-icons">{{element.icon}}</md-icon>
+				<div class="md-list-item-text" layout="column">
+					<h4>{{ element.text }}</h4>
+				</div>
+			</md-list-item>
+		</md-list>
+	</div>
+
+	
+	<div md-whiteframe="3">
+		<md-list flex>
+			<md-list-item class="md-2-line" ng-click="$location.path('/')">
+				<md-icon class="material-icons">account_circle</md-icon>
+				<div class="md-list-item-text" layout="column">
+					<h4>Nav 1</h4>
+				</div>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-click="$location.path('/')">
+				<md-icon class="material-icons">account_circle</md-icon>
+				<div class="md-list-item-text" layout="column">
+					<h4>Nav 2</h4>
+				</div>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-click="$location.path('/')">
+				<md-icon class="material-icons">vpn_key</md-icon>
+				<div class="md-list-item-text" layout="column">
+					<h4>Nav 3</h4>
+				</div>
+			</md-list-item>
+			<md-list-item class="md-2-line" ng-click="">
+				<md-icon class="material-icons">close</md-icon>
+				<div class="md-list-item-text" layout="column">
+					<h4>Nav 4</h4>
+				</div>
+			</md-list-item>
+		</md-list>
+	</div>
+</md-sidenav>
+
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-faded">
+	<a class="navbar-brand" href="/">
+		<md-button class="md-icon-button md-primary" aria-label="Menu" ng-click="toggleLeft()" hide-gt-sm>
+			<md-icon class="material-icons">menu</md-icon>
+		</md-button>
+		<!-- <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+		appName.io
+	</a>
+
+	<ul class="nav navbar-nav" hide-sm hide-xs>
+		<li class="nav-item" ng-class="{active: $route.current.activetab == element.name}" ng-repeat="element in ui.navLeftElements">
+			<a class="nav-link" ng-href="{{element.href}}">{{element.text}}</a>
+		</li>
+		
+		
+		<li class="nav-item float-xs-right">
+			<a class="nav-link" href="/">Nav 1</a>
+		</li>
+		<li class="nav-item float-xs-right">
+			<a class="nav-link" href="/user">Nav 2</a>
+		</li>
+		<li class="nav-item float-xs-right">
+			<a class="nav-link" href="/login">Nav 3</a>
+		</li>
+		<li class="nav-item float-xs-right">
+			<a class="nav-link" href="#" ng-click="">Action</a>
+		</li>
+	</ul>
+</nav>
