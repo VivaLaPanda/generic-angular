@@ -27,12 +27,14 @@ $RECYCLE.BIN/
 
 # App specific
 
-node_modules
-dist
-.tmp
-.sass-cache
-app/vendor/*
-app/bower_components
+public/node_modules
+public/dist
+public/.tmp
+public/.sass-cache
+publio/app/vendor/*
+public/app/bower_components
+public/bower_components
+
 
 # Generated files
 
